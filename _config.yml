@@ -21,7 +21,7 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "LeeYongChan"
 description              : ""
-url                      : pycong.test.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -51,7 +51,7 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : # true, false (default)
+search                   : true # true, false (default)
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
 algolia:
@@ -275,7 +275,14 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: # true
       comments: # true
       share: true
       related: true
+      show_date: true #변경. 메인 포스트에 시간 나오게
+
+
+
+
+# 구글 네이버 웹마스터 도구 같은 것도 있다.  ->  검색했을때 나오게 하는건가??
+# 나중에 좌측 사이드바 카테고리화 할때 사용    https://mmistakes.github.io/minimal-mistakes/docs/layouts/#custom-sidebar-navigation-menu
